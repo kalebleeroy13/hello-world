@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>forms</title>
+</head>
+<body>
+  <form="action" method="POST" name="practice">
+  <!--fieldset tag is uesd to categorize information-->
+    <fieldset>
+      <legend>Important Information</legend>
+      <label for="username">Username</label>
+      <!--connect a label and input key via matching for & id key-->
+      <input type="text" name="username" id="username"><br>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password"><br>
+      <!--radio button group so that only one can be selected-->
+      <input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label><br>
+      <input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label><br>
+      <br>
+
+      <!--checkbox used when multiple selections can be made-->
+      <input type="checkbox" name="food" value="Fries" id="fries"><label for="fries">Fries</label><br>
+      <input type="checkbox" name="food" value="Steak" id="steak"><label for="steak">Steak</label><br>
+      <input type="checkbox" name="food" value="Pizza" id="pizza"><label for="pizza">Pizza</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend align="center">Optional Items</legend>
+      <label for="bio">Tell us a bit about more<br>write a small bio of you</label><br>
+      <!--text area used for long form/essay style text-->
+      <textarea name="bio" id="bio" rows="10" cols="30"></textarea><br>
+
+
+      <label for="continents">Where are you from?</label><br>
+    <!--used to select one option out of many like radio buttons-->
+      <select name="continents" id="continents">
+        <!--optgroup is used to make subcategories in select boxes-->
+        <optgroup label="Americas">
+          <option value="">North America</option>
+          <option value="">South America</option>
+        </optgroup>
+        <optgroup label="Eurasia">
+          <option value="">Europe</option>
+          <option value="">Asia</option>
+        </optgroup>
+        <option value="">Africa</option>
+        <option value="">Australia</option>
+        <option value="">Antartica</option>
+      </select>
+  </fieldset>
+    <br>
+
+    <!--submit button: used to send data to serverside-->
+    <input type="submit" value="For Midgar">
+
+  </form>
+</body>
+</html>
